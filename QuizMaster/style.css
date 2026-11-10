@@ -1,0 +1,194 @@
+
+/* Stilul general al paginii */
+body {
+    background-color: #1E3A5F;
+    font-family: Arial, sans-serif;
+    color: #222222;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Titlul aplicației */
+#titlu {
+    color: white;
+    padding: 20px;
+}
+
+#titlu h1 {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#titlu p {
+    color: white;
+    font-size: 16px;
+}
+
+/* Container principal */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Cardurile */
+.card {
+    background-color: white;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Ascunderea ecranelor */
+.hidden {
+    display: none;
+}
+
+/* Butoanele */
+button {
+    background-color: #FF9800;
+    color: #222222;
+    border: none;
+    padding: 14px 25px;
+    margin: 10px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #e68900;
+    transform: scale(1.03);
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+/* Scor și progres */
+.status {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#scor {
+    color: #1E3A5F;
+}
+
+/* Bara de progres */
+.progress-bar {
+    background-color: #dddddd;
+    height: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+#progress-fill {
+    background-color: #FF9800;
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s;
+}
+
+/* Întrebarea */
+#intrebare {
+    color: #1E3A5F;
+    font-size: 23px;
+    margin-bottom: 25px;
+}
+
+/* Variantele de răspuns */
+#raspunsuri button {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 12px auto;
+    background-color: white;
+    border: 2px solid #1E3A5F;
+    color: #222222;
+}
+
+#raspunsuri button:hover:not(:disabled) {
+    background-color: #e8eff7;
+}
+
+/* Răspuns corect */
+#raspunsuri button.corect {
+    background-color: #c8f7d2;
+    border-color: #218838;
+    color: #155724;
+}
+
+/* Răspuns greșit */
+#raspunsuri button.gresit {
+    background-color: #ffd6d6;
+    border-color: #dc3545;
+    color: #721c24;
+}
+
+/* Mesajul de feedback */
+#mesaj {
+    font-size: 18px;
+    font-weight: bold;
+    min-height: 25px;
+}
+
+/* Scorul final */
+.final-score {
+    background-color: #e8eff7;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.final-score h2 {
+    color: #1E3A5F;
+    font-size: 35px;
+}
+
+/* Informații */
+.info {
+    color: #555555;
+    margin: 20px 0;
+}
+
+/* Subsol */
+footer {
+    color: white;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+/* Adaptare pentru telefoane */
+@media (max-width: 500px) {
+    body {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    #titlu h1 {
+        font-size: 30px;
+    }
+
+    #intrebare {
+        font-size: 20px;
+    }
+
+    .status {
+        justify-content: center;
+    }
+}

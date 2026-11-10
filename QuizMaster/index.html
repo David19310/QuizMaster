@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="titlu">
+        <h1>🎯 QuizMaster</h1>
+        <p>Învață prin quiz-uri și provocări interactive!</p>
+    </header>
+
+    <main class="container">
+
+        <!-- Ecranul de start -->
+        <section id="start-screen" class="card">
+            <h2>Bine ai venit!</h2>
+            <p>Testează-ți cunoștințele de cultură generală!</p>
+            <p class="info">5 întrebări · 10 puncte pentru fiecare răspuns corect</p>
+            <button id="start">Începe jocul</button>
+        </section>
+
+        <!-- Ecranul quizului -->
+        <section id="quiz-screen" class="card hidden">
+
+            <div class="status">
+                <span id="progres">Întrebarea 1 din 5</span>
+                <span id="scor">⭐ Scor: 0</span>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+
+            <h2 id="intrebare">Întrebarea apare aici</h2>
+
+            <div id="raspunsuri"></div>
+
+            <p id="mesaj"></p>
+
+            <button id="next" class="hidden">Următoarea întrebare</button>
+
+        </section>
+
+        <!-- Ecranul final -->
+        <section id="result-screen" class="card hidden">
+            <h2>🏆 Felicitări!</h2>
+            <p>Ai terminat quizul QuizMaster!</p>
+
+            <div class="final-score">
+                <p>Scorul tău final:</p>
+                <h2 id="scor-final">0 / 50</h2>
+            </div>
+
+            <p id="rezultat-mesaj"></p>
+
+            <button id="restart">Joacă din nou</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>QuizMaster © 2026 | Învață jucându-te!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
