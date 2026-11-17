@@ -12,7 +12,7 @@ Aplicația este destinată elevilor din clasa a XI-a și celor care vor să înv
 - La final își poate verifica scorul.
 
 ## Link aplicație
-https://David19310.github.io/QuizMaster/
+https://david19310.github.io/QuizMaster/
 
 ## Tehnologii folosite
 - HTML
